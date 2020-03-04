@@ -24,7 +24,7 @@ namespace venusAndMars
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {//converts  the earthweight entered to a double number and then multiplies by each planet weight conversion to get result on each planet
             double earthWeight = Convert.ToDouble(txtEarthWeight.Text);
             double mercuryWeight = earthWeight * WeightConversionFactors["Mercury"];
             txtMercuryWeight.Text = mercuryWeight.ToString();
